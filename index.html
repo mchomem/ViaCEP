@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", function() {
+                Index.init();
+            });
+        </script>
+    </head>
+    <body>
+        <table>
+            <thead></thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input id="txtCEP" type="text" />
+                        <input id="btnCEP" type="button" value="CEP"/>
+                        <a href="https://viacep.com.br/" target="blank">viacep.com.br</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 50px;">
+                        <div class="loading" style="display: none;">
+                            <span>Consultando... aguarde!</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="txtEndereco" placeholder="Endereço" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="txtCidade" placeholder="Cidade" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="txtBairro" placeholder="Bairro" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="selUF">
+                            <option value="0">Selecione...</option>
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
+                            <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </body>
+</html>
